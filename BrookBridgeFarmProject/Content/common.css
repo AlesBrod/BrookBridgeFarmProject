@@ -1,0 +1,212 @@
+﻿/*
+ Common styles for screen, print and handheld media
+ Site: Organic Farm Foods
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, th {
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+:focus {
+    outline: 0;
+}
+
+body {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+img.left {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+img.right {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: #785b3d;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    line-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 17px;
+    color: #785b3d;
+    margin: 1.25em 0 0.5em 0;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    h3.first {
+        margin-top: 0.75em;
+    }
+
+h4, h5, h6 {
+    font-size: 13px;
+    margin-bottom: 0.25em;
+}
+
+h5 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+    font-size: 12px;
+}
+
+    p.intro {
+        font-size: 17px;
+        color: #999;
+        margin: 0.25em 0 1em 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+
+blockquote, q {
+    quotes: "" "";
+}
+
+ol, ul {
+    list-style: none;
+}
+
+dl {
+    margin: 0 0 1em 0;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+dd {
+    margin-bottom: 1em;
+}
+
+input, select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+}
+
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+
+th, td {
+    padding: 0.25em 0.25em 0.25em 0.5em;
+}
+
+hr {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.cleaner {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0.0;
+}
+
+.pp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    opacity: 0.5;
+}
+
+    .pp img {
+        display: block;
+    }
+
+#fourtradingdivisions img {
+    -webkit-box-shadow: 0px 5px 19px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 5px 19px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 5px 19px 0px rgba(50, 50, 50, 0.75);
+    margin: -4px 4px 5px 5px;
+    border: solid 1px #fff;
+}
+
+#fourtradingdivisions a:first-child img {
+    transform: rotate(-4deg) scale(1) skew(1deg) translate(-10px);
+    -webkit-transform: rotate(-4deg) scale(1) skew(1deg) translate(-10px);
+    -moz-transform: rotate(-4deg) scale(1) skew(1deg) translate(-10px);
+    -o-transform: rotate(-4deg) scale(1) skew(1deg) translate(-10px);
+    -ms-transform: rotate(-4deg) scale(1) skew(1deg) translate(-10px);
+}
+
+#fourtradingdivisions a:nth-child(2) img {
+    transform: rotate(10deg) scale(1) skew(1deg) translate(-10px);
+    -webkit-transform: rotate(10deg) scale(1) skew(1deg) translate(-10px);
+    -moz-transform: rotate(10deg) scale(1) skew(1deg) translate(-10px);
+    -o-transform: rotate(10deg) scale(1) skew(1deg) translate(-10px);
+    -ms-transform: rotate(10deg) scale(1) skew(1deg) translate(-10px);
+}
+
+#fourtradingdivisions a:nth-child(3) img {
+    transform: rotate(2deg) scale(1) skew(1deg) translate(-5px);
+    -webkit-transform: rotate(2deg) scale(1) skew(1deg) translate(-5px);
+    -moz-transform: rotate(2deg) scale(1) skew(1deg) translate(-5px);
+    -o-transform: rotate(2deg) scale(1) skew(1deg) translate(-5px);
+    -ms-transform: rotate(2deg) scale(1) skew(1deg) translate(-5px);
+}
+
+#fourtradingdivisions a:nth-child(4) img {
+    transform: rotate(-4deg) scale(1) skew(1deg) translate(0px);
+    -webkit-transform: rotate(-4deg) scale(1) skew(1deg) translate(0px);
+    -moz-transform: rotate(-4deg) scale(1) skew(1deg) translate(0px);
+    -o-transform: rotate(-4deg) scale(1) skew(1deg) translate(0px);
+    -ms-transform: rotate(-4deg) scale(1) skew(1deg) translate(0px);
+}
+
+#fourtradingdivisions a:nth-child(5) img {
+    transform: rotate(2deg) scale(1) skew(1deg) translate(30px);
+    -webkit-transform: rotate(2deg) scale(1) skew(1deg) translate(30px);
+    -moz-transform: rotate(2deg) scale(1) skew(1deg) translate(30px);
+    -o-transform: rotate(2deg) scale(1) skew(1deg) translate(30px);
+    -ms-transform: rotate(2deg) scale(1) skew(1deg) translate(30px);
+}

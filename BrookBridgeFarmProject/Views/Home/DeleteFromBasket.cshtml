@@ -1,0 +1,95 @@
+﻿@model DataLibrary.Models.EditAndDeleteModel
+
+@{
+    ViewBag.Title = "DeleteFromBasket";
+}
+<header>
+    <hr>
+
+</header>
+<h2>Delete From Basket</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Veg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Veg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtyToBuy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtyToBuy)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Summary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Summary)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SumTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SumTotal)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> <hr/>
+            @Html.ActionLink("Return to Basket", "ShoppingListView")
+        </div>
+    }
+</div>
