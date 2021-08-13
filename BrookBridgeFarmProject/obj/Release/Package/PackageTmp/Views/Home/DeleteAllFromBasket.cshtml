@@ -1,0 +1,82 @@
+﻿@model IEnumerable<DataLibrary.Models.EditAndDeleteModel>
+
+@{
+    ViewBag.Title = "DeleteAllFromBasket";
+}
+<header>
+    <div>
+        <hr />
+    </div>
+</header>
+<h2>DeleteAllFromBasket</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+
+
+@Html.AntiForgeryToken()
+@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+<table class="table">
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veg)
+        </th>
+
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Veg)
+            </td>
+        </tr>
+    }
+</table>
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        @Html.ActionLink("Back to List", "ShoppingListView")
+    </div>
+}
+

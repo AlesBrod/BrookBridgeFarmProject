@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProductDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Double" Nullable="false" />
+    <Property Name="Qty" Type="Int32" Nullable="false" />
+    <Property Name="Veg" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="QtyToBuy" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="ProductDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <FunctionImport Name="ShoppingListProcedure">
+      <Parameter Name="Apple" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="ShoppingList" EntityType="ProductDBModel.ShoppingList" />
+  </EntityContainer>
+  <EntityType Name="ShoppingList">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+    <Property Name="QtyToBuy" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

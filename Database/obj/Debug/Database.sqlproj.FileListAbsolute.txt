@@ -1,0 +1,12 @@
+C:\BrookBridgeFarmProject\Database\bin\Debug\Database.dacpac
+C:\BrookBridgeFarmProject\Database\bin\Debug\Database.dll
+C:\BrookBridgeFarmProject\Database\bin\Debug\Database.pdb
+C:\BrookBridgeFarmProject\Database\obj\Debug\Database.dll
+C:\BrookBridgeFarmProject\Database\obj\Debug\Database.pdb
+C:\BrookBridgeFarmProject\Database\obj\Debug\Database.sqlproj.AssemblyReference.cache
+C:\BrookBridgeFarmProject2\Database\bin\Debug\Database.dacpac
+C:\BrookBridgeFarmProject2\Database\bin\Debug\Database.dll
+C:\BrookBridgeFarmProject2\Database\bin\Debug\Database.pdb
+C:\BrookBridgeFarmProject2\Database\obj\Debug\Database.sqlproj.AssemblyReference.cache
+C:\BrookBridgeFarmProject2\Database\obj\Debug\Database.dll
+C:\BrookBridgeFarmProject2\Database\obj\Debug\Database.pdb

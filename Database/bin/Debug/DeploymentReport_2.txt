@@ -1,0 +1,28 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Product]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column Description in table [dbo].[Product] is currently  VARCHAR (100) NOT NULL but is being changed to 
+         NVARCHAR (50) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible
+         with type  NVARCHAR (50) NOT NULL.
+       The type for column Name in table [dbo].[Product] is currently  VARCHAR (100) NOT NULL but is being changed to  NVARCHAR
+         (50) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type 
+         NVARCHAR (50) NOT NULL.
+       The type for column Price in table [dbo].[Product] is currently  FLOAT (53) NOT NULL but is being changed to  INT NOT
+         NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NOT
+         NULL.
+
+** User actions
+     Table rebuild
+       [dbo].[Product] (Table)
+
+** Supporting actions
+
+The type for column Description in table [dbo].[Product] is currently  VARCHAR (100) NOT NULL but is being changed to  NVARCHAR (50) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  NVARCHAR (50) NOT NULL.
+The type for column Name in table [dbo].[Product] is currently  VARCHAR (100) NOT NULL but is being changed to  NVARCHAR (50) NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  NVARCHAR (50) NOT NULL.
+The type for column Price in table [dbo].[Product] is currently  FLOAT (53) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur and deployment may fail if the column contains data that is incompatible with type  INT NOT NULL.
+

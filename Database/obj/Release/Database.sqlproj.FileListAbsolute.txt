@@ -1,0 +1,15 @@
+C:\BrookBridgeFarmProject\Database\bin\Release\Database.dacpac
+C:\BrookBridgeFarmProject\Database\bin\Release\Database.dll
+C:\BrookBridgeFarmProject\Database\bin\Release\Database.pdb
+C:\BrookBridgeFarmProject\Database\obj\Release\Database.sqlprojAssemblyReference.cache
+C:\BrookBridgeFarmProject\Database\obj\Release\Database.dll
+C:\BrookBridgeFarmProject\Database\obj\Release\Database.pdb
+C:\BrookBridgeFarmProject\Database\bin\Release\DataLibrary.dll
+C:\BrookBridgeFarmProject\Database\bin\Release\Dapper.dll
+C:\BrookBridgeFarmProject\Database\bin\Release\DataLibrary.pdb
+C:\BrookBridgeFarmProject\Database\bin\Release\Dapper.xml
+C:\BrookBridgeFarmProject\Database\obj\Release\Model.xml
+C:\BrookBridgeFarmProject\Database\obj\Release\refactor.xml
+C:\BrookBridgeFarmProject\Database\obj\Release\postdeploy.sql
+C:\BrookBridgeFarmProject\Database\obj\Release\predeploy.sql
+C:\BrookBridgeFarmProject\Database\obj\Release\Database.sqlproj.CopyComplete

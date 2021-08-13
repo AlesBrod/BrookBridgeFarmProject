@@ -1,0 +1,97 @@
+﻿@model IEnumerable<DataLibrary.Models.ShoppingListModel>
+
+@{
+    ViewBag.Title = "Previous Orders";
+}
+<header>
+    <hr>
+
+</header>
+
+<h2>Previous Orders</h2>
+@section scripts
+            {
+    <script type="text/javascript" src="~/Content/js/jquery.js"></script>
+    <script type="text/javascript" src="~/Content/js/menu.js"></script>
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Veg)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QtyToBuy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Summary)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Code)
+            </td>
+            <td>
+                £@Html.DisplayFor(modelItem => item.Price)/each
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Veg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QtyToBuy) pcs
+            </td>
+            <td>
+                £
+                @Html.DisplayFor(modelItem => item.Summary)
+            </td>          
+
+        </tr>
+    }
+
+</table>
+
+
+<table class="table-striped ">
+   
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.SumTotal)
+
+        </th>
+    </tr>
+    <tr>
+        <td>
+            £
+            @Model.Sum(item => item.Summary)
+
+        </td>
+    </tr>
+
+</table>

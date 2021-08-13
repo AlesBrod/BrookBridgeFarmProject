@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProductDBModel1StoreContainer" CdmEntityContainer="ProductDBEntities1">
+    <EntitySetMapping Name="BuyingList">
+      <EntityTypeMapping TypeName="ProductDBModel1.BuyingList">
+        <MappingFragment StoreEntitySet="BuyingList">
+          <ScalarProperty Name="BId" ColumnName="BId" />
+          <ScalarProperty Name="BPName" ColumnName="BPName" />
+          <ScalarProperty Name="BDescription" ColumnName="BDescription" />
+          <ScalarProperty Name="BCode" ColumnName="BCode" />
+          <ScalarProperty Name="BPrice" ColumnName="BPrice" />
+          <ScalarProperty Name="BQty" ColumnName="BQty" />
+          <ScalarProperty Name="BVeg" ColumnName="BVeg" />
+          <ScalarProperty Name="BQtyToBuy" ColumnName="BQtyToBuy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="ProductDBModel1.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Veg" ColumnName="Veg" />
+          <ScalarProperty Name="QtyToBuy" ColumnName="QtyToBuy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

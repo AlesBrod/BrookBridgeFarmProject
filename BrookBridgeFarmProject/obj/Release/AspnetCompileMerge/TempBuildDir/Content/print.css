@@ -1,0 +1,20 @@
+﻿/*
+ Print styles
+ Site: Organic Farm Foods
+*/
+
+/* Hide unnecessary parts */
+#header .accessibility, #nav, #sidebar, #footer ul {
+    display: none;
+}
+
+body {
+    font-size: 9pt;
+}
+
+#footer {
+    border-top: 1px solid #000;
+    font-size: 0.9em;
+    margin-top: 2em;
+    padding-top: 0.5em;
+}

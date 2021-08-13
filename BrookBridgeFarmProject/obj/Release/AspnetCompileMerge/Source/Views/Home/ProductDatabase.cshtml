@@ -1,0 +1,96 @@
+﻿@model IEnumerable<DataLibrary.Models.ShoppingListModel>
+
+@{
+    ViewBag.Title = "Products DB";
+    
+}
+<header>
+    <hr>
+
+</header>
+<h2>DataBase Of The Products</h2>
+
+@section scripts
+            {
+    <script type="text/javascript" src="~/Content/js/jquery.js"></script>
+    <script type="text/javascript" src="~/Content/js/menu.js"></script>
+}
+
+@if (Roles.IsUserInRole("Admin"))
+{
+    <p>
+        @Html.ActionLink("Create New Product", "Create")
+
+    </p>
+}
+
+<table class="table">
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qty)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Veg)
+        </th>   
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Name)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.Description)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Code)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Qty)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Veg)
+    </td>
+    
+    <td>
+        @if (item.Qty > 0)
+        {
+
+            @Html.ActionLink("Add To Basket", "Buy", new { id = item.Id }) <br />
+
+        }
+        else
+        {<h4>Item is not available</h4>}
+        @if (Roles.IsUserInRole("Admin"))
+        {
+
+            @Html.ActionLink("Edit Details", "Edit", new { id = item.Id }) <br />
+            @Html.ActionLink("Delete The Line", "Delete", new { id = item.Id })
+
+        }
+    </td>
+
+</tr>
+    }
+
+</table>
