@@ -10,3 +10,13 @@ C:\BrookBridgeFarmProject2\Database\bin\Debug\Database.pdb
 C:\BrookBridgeFarmProject2\Database\obj\Debug\Database.sqlproj.AssemblyReference.cache
 C:\BrookBridgeFarmProject2\Database\obj\Debug\Database.dll
 C:\BrookBridgeFarmProject2\Database\obj\Debug\Database.pdb
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\bin\Debug\Database.dacpac
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\bin\Debug\Database.dll
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\bin\Debug\Database.pdb
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\obj\Debug\Database.sqlproj.AssemblyReference.cache
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\obj\Debug\Model.xml
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\obj\Debug\refactor.xml
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\obj\Debug\postdeploy.sql
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\obj\Debug\predeploy.sql
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\obj\Debug\Database.dll
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\Database\obj\Debug\Database.pdb

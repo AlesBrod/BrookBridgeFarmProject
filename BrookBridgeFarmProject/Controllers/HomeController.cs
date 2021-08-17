@@ -34,7 +34,7 @@ namespace BrookBridgeFarmProject.Controllers
         {            
             return View(ProductProcessor.LoadProduct());
         }
-        [Authorize]
+        
         public ActionResult About()
         {
             return View("About");
