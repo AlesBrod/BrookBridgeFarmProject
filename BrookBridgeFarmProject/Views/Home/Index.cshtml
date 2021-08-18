@@ -54,139 +54,26 @@
         <div class="container">
             <div class="row">
                 <div class="span12">
-                    <!-- slider -->
+                    
+    
+    <!-- slider -->
                     <div class="flexslider">
                         <ul class="slides">
-                            <li> <img src="~/Content/img/Vegetable/vegetable2.jpg" alt="ddd"> </li>
-                            <li>
-                                <img src="~/Content/img/Vegetable/apple_cider.jpeg" alt=""
-                                     style="max-height:356px">
-                            </li>
-                            <li> <img src="~/Content/img/Vegetable/home_juices.jpg" alt=""> </li>
-                            <li>
-                                <img src="~/Content/img/Meat/pork.jpg"
-                                     style="max-height:356px" alt="">
-                            </li>
-                            <li>
-                                <img src="~/Content/img/Vegetable/set_of_ciders.jpg"
-                                     style="max-height:356px" alt="">
-                            </li>
+                            <li> <img src="~/Content/img/Vegetable/home_juices.jpg" style="max-height:356px" alt=""> </li>
+                            <li> <img src="~/Content/img/Vegetable/vegetable2.jpg" style="max-height:356px" alt=""> </li>
+                            <li> <img src="~/Content/img/Meat/pork.jpg" style="max-height:356px" alt=""> </li>
+                      
+
                         </ul>
                     </div>
                     <span id="responsiveFlag"></span>
                     <div class="block-slogan">
                         <div class="container">
-                            <h1 style="text-align:center">BrookBridge Project</h1>
+                            <h1 style="text-align:center">Welcome to BrookBridge, the place for organic food</h1>
                         </div>
-                        <div>
-                            <h2>Introduction</h2>
+                         
                         </div>
-                        <div>
-                            <p>
-                                <b>
-                                    Brookbridge Free Range is a traditional farm shop that sells fresh organic meat, fruit and vegetables and related products (e.g. apple juice), and makes deliveries to the surrounding area. Guy Holmes, the owner, has a small but slowly growing customer base who know about the farm shop through word of mouth and newspaper adverts.
-                                    Now Holmes is planning on expanding the business and establishing sister farms in other areas across the country. He realises that Brookbridge Free Range is going to need an online presence.
-                                    Holmes understands that a website will raise awareness of his business, but he wants to go further than this. He wants to upgrade Brookbridge to an e-business.
-                                    You are a student undergoing work experience at Brookbridge. On your first day, Guy Holmes had you digging potatoes and sorting radishes, but he has since discovered that you have a working knowledge of websites, programming and databases.
-                                    If he can put your skills and knowledge to good use, he may take you on permanently to manage the Brookbridge website.
-                                </b>
-                            </p>
-                        </div>
-
-                        <div>
-                            <h2>Project Scope</h2>
-                        </div>
-                        <p>
-                            <b>
-                                The aim of this project is to put together a working website which connects to a database, enabling users to “purchase” organic food online. This website does not need to go live.
-                            </b>
-                        </p>
-
-                        <div>
-                            <h2>Requirements</h2>
-                        </div>
-
-                        <h3>Website</h3>
-                        <p>
-                            <b>
-                                You need to put a website together. Keep it simple to begin with; you can always refine the style and add extra features once you’ve got it working. The non-interactive pages can include a main page and an About Us page, perhaps with pictures of the farm, the owner, and some organic food. The main focus is on the Products page and Admin page (see below), which will link to a database. This will enable customers to buy food online.
-                            </b>
-                        </p>
-
-                        <div>
-                            <h3>Database</h3>
-
-                            <p>
-                                <b>
-                                    The database will store product data in the following form:
-                                    Field	Explanation	Example
-
-                                    name	Product name	Small sack of potatoes
-                                    description	What it is	5kg sack of Maris Piper potatoes
-                                    code	Unique identifier	VPMP5
-                                    price	Price per unit	£5
-                                    qty	Number of units available	23
-                                    veg	Suitable for vegetatians	Yes
-
-
-                                    The products in the database will include products likely to be available in a farm shop. These could be divided up into vegetables (potatoes, leeks, cabbages etc.), fruit (apples, strawberries etc.), meat (pork, beef etc.) and related (apple juice, cider etc.).
-                                    For the unique identifier code you can use whatever system that work for you. It could be an abbreviation (e.g. FAB4 for a 4kg sack of Bramley apples, where the first letter is F for fruit, V for vegetables, M for meat) or simply a number.
-                                    Aim to have about 20 items in the database.
-                                </b>
-                            </p>
-                        </div>
-                        <div>
-                            <h3>Products page</h3>
-
-                            <p>
-                                <b>
-                                    The contents of the database will be displayed here in the form of a table. You may later wish to include pictures of the product, but it’s best to get the database working before making refinements.
-                                    There will be three levels of access to the Products page: Viewer, Buyer and Admin.
-                                    During the development stage, three radio buttons will be available so that the user can select their access level.
-
-                                </b>
-                            </p>
-                        </div>
-                        <h4>Access level</h4>
-                        <h5>Viewer</h5>
-                        <p><b>Think of someone surfing the internet. They come across the Brookbridge website and browse through the products. They may or may not be thinking of creating an account with Brookbridge. Until they have an account, they can look but they cannot buy.</b></p>
-                        <h5>Buyer</h5>
-                        <p>
-                            <b>
-                                Users with accounts can buy products. They do this by selecting a product and stating how many they would like. The database is immediately updated, and the qty value is displayed. For example, if 23 small sacks of potatoes are available, and the buyer buys 10 sacks, the amount available is immediately changed to 13. The user is informed that this will cost £50.
-                                At this stage of the development process, no attempt is made to simulate actual payment.
-                            </b>
-                        </p>
-                        <h5>Admin</h5>
-                        <p>
-                            <b>
-                                The administrator is able to edit the database through the Products page. In a real-world situation, the administrator might be informed that 40 small sacks of potatoes have been delivered, in which case the qty value is changed from 13 to 53.
-                                The administrator may also edit descriptions, and add new products (each with their own unique code).
-                            </b>
-                        </p>
-                        <div>
-                            <h2>Testing</h2>
-                        </div>
-                        <p>
-                            <b>
-                                Ensure that the products in the database display correctly in the Products page.
-                                Ensure that when operating in the Viewer mode, it is not possible to buy or edit items in the database.
-                                Ensure that when operating in the Buyer mode, it is possible to buy multiple items, and that the price is correctly displayed. Ensure that Buyers cannot edit the database.
-                                Ensure that when operating in the Admin mode, it is possible to edit existing items and add new items.
-                            </b>
-                        </p>
-                        <div>
-                            <h2>Further development</h2>
-                        </div>
-                        <p>
-                            <b>
-                                Add a database table for User Accounts. Include the user’s name, password and access level – i.e. Buyer or Admin. Only those with Admin access level can edit the database. This would replace the radio buttons.
-                                Add a table for Purchase History, which records which items a Buyer has bought, and when.
-                            </b>
-                        </p>
-                    </div>
-                    <p style="text-align:center; padding-top:20px;"><a href="#" class="btn btn-1">Download BrookBridge Code</a></p>
-
+                   </div>
                 </div>
             </div>
         </div>
@@ -200,116 +87,48 @@
                 <div class="container">
                     <div class="row">
                         <article class="span12">
+
+
                             <h4>Our Work</h4>
                         </article>
-                        <div class="clear"></div>
-                        <ul class="portfolio clearfix">
-                            <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/1-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/1.jpg"></a></li>
-                            <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/2-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/2.jpg"></a></li>
-                            <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/3-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/3.jpg"></a></li>
-                            <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/4-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/4.jpg"></a></li>
-                            <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/5-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/5.jpg"></a></li>
-                            <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/6-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/6.jpg"></a></li>
-                            <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/7-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/7.jpg"></a></li>
-                            <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/8-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/8.jpg"></a></li>
-                        </ul>
-                    </div>
+                        <div class="container">
+                            <div class="row">
+                                <ul class="portfolio clearfix">
+                                    <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/1-1.jpg" class ="magnifier"><img alt="" src="~/Content/img/Our_Work/1.jpg"></a></li>
+                                    <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/2-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/2.jpg"></a></li>
+                                    <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/3-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/3.jpg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <ul class="portfolio clearfix">
+                                    <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/4-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/4.jpg"></a></li>
+                                    <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/5-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/5.jpg"></a></li>
+                                    <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/6-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/6.jpg"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <ul class="portfolio clearfix">
+                                    <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/7-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/7.jpg"></a></li>
+                                    <li class="box" style="max-width:270px; max-height: 192px"><a href="~/Content/img/Our_Work/8-1.jpg" class="magnifier"><img alt="" src="~/Content/img/Our_Work/8.jpg"></a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                                                                          
+                    
                 </div>
             </div>
 
-            @* <div class="row-1">
-            <div class="container">
-                <div class="row">
-                    <article class="span12">
-                        <h4>From blog</h4>
-                    </article>
-                    <ul class="thumbnails thumbnails-1">
-                        <li class="span3">
-                            <div class="thumbnail thumbnail-1">
-                                <h3>Web Design</h3>
-                                <img src="~/Content/img/blog-featured-01.jpg" alt="">
-                                <section>
-                                    <a href="#"><h3>At vero eos et accusamus et iusto </h3></a>
-                                    <div class="meta">
-                                        <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
-                                        <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
-                                        <a href="#" class="comments"><i class="icon-comment"></i> 7 comments</a>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <p>Vivamus sollicitudin libero auctor arcu pulvinar commodo.</p>
-                                    <a href="#" class="btn btn-1">Read More</a>
-                                </section>
-                            </div>
-                        </li>
-                        <li class="span3">
-                            <div class="thumbnail thumbnail-1">
-                                <h3>Graphics</h3>
-                                <img src="~/Content/img/blog-featured-02.jpg" alt="">
-                                <section>
-                                    <a href="#"><h3>Deleniti atque corrupti quos</h3></a>
-                                    <div class="meta">
-                                        <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
-                                        <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
-                                        <a href="#" class="comments"><i class="icon-comment"></i> 4 comments</a>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
-                                    <a href="#" class="btn btn-1">Read More</a>
-                                </section>
-                            </div>
-                        </li>
-                        <li class="span3">
-                            <div class="thumbnail thumbnail-1">
-                                <h3>Social Media</h3>
-                                <img src="~/Content/img/blog-featured-03.jpg" alt="">
-                                <section>
-                                    <a href="#"><h3>Similique sunt in culpa qui officia</h3></a>
-                                    <div class="meta">
-                                        <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
-                                        <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
-                                        <a href="#" class="comments"><i class="icon-comment"></i> 9 comments</a>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <p>Pellentesque mi justo, laoreet non bibendum non, auctor imperdiet eros.</p>
-                                    <a href="#" class="btn btn-1">Read More</a>
-                                </section>
-                            </div>
-                        </li>
-                        <li class="span3">
-                            <div class="thumbnail thumbnail-1">
-                                <h3 class="title-1 extra">Photography</h3>
-                                <img src="~/Content/img/blog-featured-04.jpg" alt="">
-                                <section>
-                                    <a href="#"><h3>Similique sunt in culpa qui officia</h3></a>
-                                    <div class="meta">
-                                        <time datetime="2012-11-09" class="date-1"><i class="icon-calendar"></i> 9.11.2012</time>
-                                        <div class="name-author"><i class="icon-user"></i> <a href="#">Admin</a></div>
-                                        <a href="#" class="comments"><i class="icon-comment"></i> 1 comment</a>
-                                    </div>
-                                    <div class="clear"></div>
-                                    <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
-                                    <a href="#" class="btn btn-1">Read More</a>
-                                </section>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>*@
+           
         </div>
     </div>
-
-    <!-- footer -->
-    <!--<footer>
-        <div class="container clearfix">
-            <ul class="list-social pull-right">
-                <li><a class="icon-1" href="#"></a></li>
-                <li><a class="icon-2" href="#"></a></li>
-                <li><a class="icon-3" href="#"></a></li>
-                <li><a class="icon-4" href="#"></a></li>
-            </ul>
-        </div>
-    </footer>-->
+   
 
 </body>
 </html>

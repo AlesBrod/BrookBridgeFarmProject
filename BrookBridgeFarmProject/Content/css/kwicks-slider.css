@@ -122,7 +122,7 @@ html[xmlns] .slides {
 	#responsiveFlag{display:block;}
 }
 
- @media only screen and (max-width: 1299px) {
+ @media only screen and (min-width: 1299px) {
 .flexslider .slides > li {
 	opacity:1
 }	 

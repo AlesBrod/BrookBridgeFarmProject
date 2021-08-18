@@ -98,7 +98,7 @@
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 2000px) {
     .row {
         margin-left: -30px;
         *zoom: 1;

@@ -14,11 +14,13 @@ namespace BrookBridgeFarmProject.Controllers
 
     public class HomeController : Controller
     {
+        //Contact Page
         public ActionResult Contact()
         {
             return View("Contact");
         }
 
+        //Home Page
         public ActionResult Index()
         {
             /*if (Session["user"]==null || Session ["admin"] == null)
@@ -28,6 +30,7 @@ namespace BrookBridgeFarmProject.Controllers
             return View("Index");
         }
 
+        //Product Page, login req
         [Authorize]
         public ActionResult ProductDatabase()
 
@@ -35,13 +38,14 @@ namespace BrookBridgeFarmProject.Controllers
             return View(ProductProcessor.LoadProduct());
         }
         
+        //About Page, Project scope
         public ActionResult About()
         {
             return View("About");
         }
 
         [Authorize(Roles = "Admin")]
-        // GET: Home/Create
+        // Create of new Product for Admin
         public ActionResult Create()
         {
             return View();
@@ -69,7 +73,7 @@ namespace BrookBridgeFarmProject.Controllers
             return View();
         }
 
-        // GET: Home/Edit/5
+        // Edit product descr for Admin
         [Authorize(Roles = "Admin")]
         public ActionResult Edit(int id)
         {
@@ -87,8 +91,6 @@ namespace BrookBridgeFarmProject.Controllers
             return View();
         }
 
-
-            // POST: Home/Edit/5
             [HttpPost]
         [Authorize(Roles = "Admin")]
         public ActionResult Edit(EditAndDeleteModel product)
@@ -101,8 +103,8 @@ namespace BrookBridgeFarmProject.Controllers
                 return View(product);
             }
             
-
-        // GET: Home/Delete/5
+        //Delete product for Admin
+        
         [Authorize(Roles = "Admin")]
         public ActionResult Delete(int id)
         {
@@ -137,6 +139,9 @@ namespace BrookBridgeFarmProject.Controllers
 
             return View();
         }
+
+        // Delete line from basket for User
+        
         [Authorize]
         public ActionResult DeleteFromBasket(int id)
         {
@@ -175,7 +180,7 @@ namespace BrookBridgeFarmProject.Controllers
             return View();
         }
 
-
+        // Delete all basket content
         [Authorize]
         public ActionResult DeleteAllFromBasket()
         {
@@ -208,7 +213,7 @@ namespace BrookBridgeFarmProject.Controllers
             }
             return View();
         }
-
+        // Buying, empty basket and move content to Current order and Order History
         [Authorize]
                 public ActionResult Buy(int id)
         {

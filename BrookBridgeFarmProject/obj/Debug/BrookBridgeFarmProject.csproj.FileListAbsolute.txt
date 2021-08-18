@@ -400,3 +400,6 @@ C:\Users\PC\Source\Repos\BrookBridgeFarmProject\BrookBridgeFarmProject\obj\Debug
 C:\Users\PC\Source\Repos\BrookBridgeFarmProject\BrookBridgeFarmProject\obj\Debug\BrookBridgeFarmProject.csproj.CopyComplete
 C:\Users\PC\Source\Repos\BrookBridgeFarmProject\BrookBridgeFarmProject\obj\Debug\BrookBridgeFarmProject.dll
 C:\Users\PC\Source\Repos\BrookBridgeFarmProject\BrookBridgeFarmProject\obj\Debug\BrookBridgeFarmProject.pdb
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\BrookBridgeFarmProject\bin\roslyn\csc.rsp
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\BrookBridgeFarmProject\bin\roslyn\csi.rsp
+C:\Users\PC\Source\Repos\BrookBridgeFarmProject\BrookBridgeFarmProject\bin\roslyn\vbc.rsp
