@@ -258,6 +258,7 @@ namespace BrookBridgeFarmProject.Controllers
             else { return RedirectToAction("Index"); }
 
         }      
+        // Basket Page
         [Authorize]
         public ActionResult ShoppingListView()
         {            
@@ -300,7 +301,7 @@ namespace BrookBridgeFarmProject.Controllers
             return View(ShoppingListProcessor.DatabaseListing(userId));
             
         }
-       
+       // Order History Page
         public ActionResult OrderForPrint(string name)
         {  
             string sql = @"SELECT * FROM dbo."+ name + ";"; 
